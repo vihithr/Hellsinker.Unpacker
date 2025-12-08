@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HsUnpack", "HsUnpack\HsUnpack.csproj", "{A0A84F32-8A30-4DF8-BC50-1093EB0BAA93}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "解决方案项", "解决方案项", "{76DFE0AB-6CB1-4731-9F3D-096F667B3A71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0A84F32-8A30-4DF8-BC50-1093EB0BAA93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0A84F32-8A30-4DF8-BC50-1093EB0BAA93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0A84F32-8A30-4DF8-BC50-1093EB0BAA93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0A84F32-8A30-4DF8-BC50-1093EB0BAA93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4349581D-57CB-4DBD-B0DD-6BE245513C01}
+	EndGlobalSection
+EndGlobal
