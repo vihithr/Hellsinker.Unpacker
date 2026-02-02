@@ -37,6 +37,8 @@
             label2 = new Label();
             button3 = new Button();
             button4 = new Button();
+            comboBoxLanguage = new ComboBox();
+            labelLanguage = new Label();
             SuspendLayout();
             // 
             // button1
@@ -46,7 +48,7 @@
             button1.Name = "button1";
             button1.Size = new Size(136, 41);
             button1.TabIndex = 0;
-            button1.Text = "选择文件";
+            button1.Text = Properties.Resources.ButtonSelectFile;
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
@@ -57,7 +59,7 @@
             button2.Name = "button2";
             button2.Size = new Size(136, 41);
             button2.TabIndex = 1;
-            button2.Text = "解宛";
+            button2.Text = Properties.Resources.ButtonUnpack;
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
@@ -102,7 +104,7 @@
             button3.Name = "button3";
             button3.Size = new Size(136, 40);
             button3.TabIndex = 6;
-            button3.Text = "选择文件";
+            button3.Text = Properties.Resources.ButtonSelectFile;
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
@@ -112,9 +114,28 @@
             button4.Name = "button4";
             button4.Size = new Size(136, 40);
             button4.TabIndex = 7;
-            button4.Text = "封宛";
+            button4.Text = Properties.Resources.ButtonPack;
             button4.UseVisualStyleBackColor = true;
             button4.Click += button4_Click;
+            // 
+            // comboBoxLanguage
+            // 
+            comboBoxLanguage.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxLanguage.FormattingEnabled = true;
+            comboBoxLanguage.Location = new Point(818, 395);
+            comboBoxLanguage.Name = "comboBoxLanguage";
+            comboBoxLanguage.Size = new Size(136, 36);
+            comboBoxLanguage.TabIndex = 8;
+            comboBoxLanguage.SelectedIndexChanged += comboBoxLanguage_SelectedIndexChanged;
+            // 
+            // labelLanguage
+            // 
+            labelLanguage.AutoSize = true;
+            labelLanguage.Location = new Point(697, 398);
+            labelLanguage.Name = "labelLanguage";
+            labelLanguage.Size = new Size(111, 28);
+            labelLanguage.TabIndex = 9;
+            labelLanguage.Text = "Language";
             // 
             // Form1
             // 
@@ -123,6 +144,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1020, 438);
+            Controls.Add(labelLanguage);
+            Controls.Add(comboBoxLanguage);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(label2);
@@ -149,5 +172,7 @@
         private Label label2;
         private Button button3;
         private Button button4;
+        private ComboBox comboBoxLanguage;
+        private Label labelLanguage;
     }
 }

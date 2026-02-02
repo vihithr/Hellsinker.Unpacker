@@ -117,4 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="FormTitle" xml:space="preserve">
+    <value>Hs解包Beta</value>
+  </data>
+  <data name="ButtonSelectFile" xml:space="preserve">
+    <value>选择文件</value>
+  </data>
+  <data name="ButtonUnpack" xml:space="preserve">
+    <value>解宛</value>
+  </data>
+  <data name="ButtonPack" xml:space="preserve">
+    <value>封宛</value>
+  </data>
+  <data name="LabelUnpackFile" xml:space="preserve">
+    <value>解包文件选择</value>
+  </data>
+  <data name="LabelPackConfig" xml:space="preserve">
+    <value>封包配置文件选择</value>
+  </data>
+  <data name="DialogTitleOpen" xml:space="preserve">
+    <value>打开</value>
+  </data>
+  <data name="FileFilterAll" xml:space="preserve">
+    <value>所有文件 (*.*)|*.*</value>
+  </data>
 </root>

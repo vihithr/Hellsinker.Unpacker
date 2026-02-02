@@ -9,6 +9,7 @@ HsUnpack 是一个基于 .NET 8 的 Windows 图形工具，专门面向游戏 **
 - 解析 `.pak` 文件并按原始路径批量导出。
 - 基于 `.cfg` 配置将目录内容重新写入 `.pak`。
 - 内置简单文件偏移/长度处理，无需命令行操作。
+- 🌍 **多语言支持**：自动检测系统语言，支持中文、英文、日文，可在界面手动切换。
 
 ## 环境要求
 - Windows 10/11
@@ -31,6 +32,12 @@ HsUnpack 是一个基于 .NET 8 的 Windows 图形工具，专门面向游戏 **
 - `HsUnpack/bin/` 编译产物
 - `HsUnpack/HsDataProgress.cs` 核心打包/解包逻辑
 
+## GitHub Actions
+本项目配置了自动编译流程：
+- 推送到 main/master 分支时自动编译
+- 创建 Tag 时自动发布 Release
+- 可在 Actions 标签页下载编译产物
+
 ## 贡献
 欢迎提交 Issue/PR，提供新功能或格式支持。
 
@@ -48,6 +55,7 @@ HsUnpack is a .NET 8 Windows GUI utility tailored for the game **Hellsinker.**. 
 - Unpack `.pak` archives to their original folder structure.
 - Repack folders back into `.pak` using the generated `.cfg` index.
 - Handles offsets and lengths internally; no command line required.
+- 🌍 **Multi-language Support**: Auto-detects system language, supports Chinese, English, and Japanese with manual UI switcher.
 
 ## Requirements
 - Windows 10/11
@@ -69,6 +77,12 @@ HsUnpack is a .NET 8 Windows GUI utility tailored for the game **Hellsinker.**. 
 - `HsUnpack/` WinForms source
 - `HsUnpack/bin/` build artifacts
 - `HsUnpack/HsDataProgress.cs` core packing/unpacking logic
+
+## GitHub Actions
+Automated build workflow configured:
+- Auto-builds on push to main/master branch
+- Auto-releases on Tag creation
+- Download build artifacts from Actions tab
 
 ## Contributing
 Issues/PRs are welcome for new features or format support.

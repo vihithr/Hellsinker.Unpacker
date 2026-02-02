@@ -59,5 +59,77 @@ namespace HsUnpack.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   查找类似 封宛 的本地化字符串。
+        /// </summary>
+        internal static string ButtonPack {
+            get {
+                return ResourceManager.GetString("ButtonPack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 选择文件 的本地化字符串。
+        /// </summary>
+        internal static string ButtonSelectFile {
+            get {
+                return ResourceManager.GetString("ButtonSelectFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 解宛 的本地化字符串。
+        /// </summary>
+        internal static string ButtonUnpack {
+            get {
+                return ResourceManager.GetString("ButtonUnpack", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 打开 的本地化字符串。
+        /// </summary>
+        internal static string DialogTitleOpen {
+            get {
+                return ResourceManager.GetString("DialogTitleOpen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 所有文件 (*.*)|*.* 的本地化字符串。
+        /// </summary>
+        internal static string FileFilterAll {
+            get {
+                return ResourceManager.GetString("FileFilterAll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 Hs解包Beta 的本地化字符串。
+        /// </summary>
+        internal static string FormTitle {
+            get {
+                return ResourceManager.GetString("FormTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 封包配置文件选择 的本地化字符串。
+        /// </summary>
+        internal static string LabelPackConfig {
+            get {
+                return ResourceManager.GetString("LabelPackConfig", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 解包文件选择 的本地化字符串。
+        /// </summary>
+        internal static string LabelUnpackFile {
+            get {
+                return ResourceManager.GetString("LabelUnpackFile", resourceCulture);
+            }
+        }
     }
 }
