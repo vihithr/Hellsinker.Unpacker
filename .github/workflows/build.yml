@@ -3,8 +3,6 @@ name: Build HsUnpack
 on:
   push:
     branches: [ main, master ]
-    tags:
-      - 'v*'
   pull_request:
     branches: [ main, master ]
   workflow_dispatch:
@@ -36,11 +34,3 @@ jobs:
       with:
         name: HsUnpack-Release
         path: ./publish/
-        
-    - name: Create Release (on tag)
-      if: startsWith(github.ref, 'refs/tags/')
-      uses: softprops/action-gh-release@v1
-      with:
-        files: ./publish/*
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
