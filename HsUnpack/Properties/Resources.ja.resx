@@ -141,4 +141,40 @@
   <data name="FileFilterAll" xml:space="preserve">
     <value>すべてのファイル (*.*)|*.*</value>
   </data>
+  <data name="LabelCtxDecrypt" xml:space="preserve">
+    <value>CTXファイル復号化</value>
+  </data>
+  <data name="LabelCtxEncrypt" xml:space="preserve">
+    <value>CTXファイル暗号化</value>
+  </data>
+  <data name="ButtonDecryptCtx" xml:space="preserve">
+    <value>CTX復号化</value>
+  </data>
+  <data name="ButtonEncryptCtx" xml:space="preserve">
+    <value>CTX暗号化</value>
+  </data>
+  <data name="MessageSelectFile" xml:space="preserve">
+    <value>まずファイルを選択してください</value>
+  </data>
+  <data name="MessageFileNotFound" xml:space="preserve">
+    <value>ファイルが見つかりません</value>
+  </data>
+  <data name="MessageDecryptSuccess" xml:space="preserve">
+    <value>復号化に成功しました！ファイルは次の場所に保存されました：</value>
+  </data>
+  <data name="MessageEncryptSuccess" xml:space="preserve">
+    <value>暗号化に成功しました！ファイルは次の場所に保存されました：</value>
+  </data>
+  <data name="MessageDecryptFailed" xml:space="preserve">
+    <value>復号化に失敗しました：</value>
+  </data>
+  <data name="MessageEncryptFailed" xml:space="preserve">
+    <value>暗号化に失敗しました：</value>
+  </data>
+  <data name="MessageSuccess" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="MessageError" xml:space="preserve">
+    <value>エラー</value>
+  </data>
 </root>

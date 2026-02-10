@@ -141,4 +141,40 @@
   <data name="FileFilterAll" xml:space="preserve">
     <value>所有文件 (*.*)|*.*</value>
   </data>
+  <data name="LabelCtxDecrypt" xml:space="preserve">
+    <value>CTX文件解密</value>
+  </data>
+  <data name="LabelCtxEncrypt" xml:space="preserve">
+    <value>CTX文件加密</value>
+  </data>
+  <data name="ButtonDecryptCtx" xml:space="preserve">
+    <value>解密CTX</value>
+  </data>
+  <data name="ButtonEncryptCtx" xml:space="preserve">
+    <value>加密CTX</value>
+  </data>
+  <data name="MessageSelectFile" xml:space="preserve">
+    <value>请先选择文件</value>
+  </data>
+  <data name="MessageFileNotFound" xml:space="preserve">
+    <value>文件不存在</value>
+  </data>
+  <data name="MessageDecryptSuccess" xml:space="preserve">
+    <value>解密成功！文件已保存到：</value>
+  </data>
+  <data name="MessageEncryptSuccess" xml:space="preserve">
+    <value>加密成功！文件已保存到：</value>
+  </data>
+  <data name="MessageDecryptFailed" xml:space="preserve">
+    <value>解密失败：</value>
+  </data>
+  <data name="MessageEncryptFailed" xml:space="preserve">
+    <value>加密失败：</value>
+  </data>
+  <data name="MessageSuccess" xml:space="preserve">
+    <value>成功</value>
+  </data>
+  <data name="MessageError" xml:space="preserve">
+    <value>错误</value>
+  </data>
 </root>

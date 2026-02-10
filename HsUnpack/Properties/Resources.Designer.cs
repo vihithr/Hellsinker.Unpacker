@@ -131,5 +131,113 @@ namespace HsUnpack.Properties {
                 return ResourceManager.GetString("LabelUnpackFile", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   查找类似 CTX文件解密 的本地化字符串。
+        /// </summary>
+        internal static string LabelCtxDecrypt {
+            get {
+                return ResourceManager.GetString("LabelCtxDecrypt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 CTX文件加密 的本地化字符串。
+        /// </summary>
+        internal static string LabelCtxEncrypt {
+            get {
+                return ResourceManager.GetString("LabelCtxEncrypt", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 解密CTX 的本地化字符串。
+        /// </summary>
+        internal static string ButtonDecryptCtx {
+            get {
+                return ResourceManager.GetString("ButtonDecryptCtx", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 加密CTX 的本地化字符串。
+        /// </summary>
+        internal static string ButtonEncryptCtx {
+            get {
+                return ResourceManager.GetString("ButtonEncryptCtx", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 请先选择文件 的本地化字符串。
+        /// </summary>
+        internal static string MessageSelectFile {
+            get {
+                return ResourceManager.GetString("MessageSelectFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 文件不存在 的本地化字符串。
+        /// </summary>
+        internal static string MessageFileNotFound {
+            get {
+                return ResourceManager.GetString("MessageFileNotFound", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 解密成功！文件已保存到： 的本地化字符串。
+        /// </summary>
+        internal static string MessageDecryptSuccess {
+            get {
+                return ResourceManager.GetString("MessageDecryptSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 加密成功！文件已保存到： 的本地化字符串。
+        /// </summary>
+        internal static string MessageEncryptSuccess {
+            get {
+                return ResourceManager.GetString("MessageEncryptSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 解密失败： 的本地化字符串。
+        /// </summary>
+        internal static string MessageDecryptFailed {
+            get {
+                return ResourceManager.GetString("MessageDecryptFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 加密失败： 的本地化字符串。
+        /// </summary>
+        internal static string MessageEncryptFailed {
+            get {
+                return ResourceManager.GetString("MessageEncryptFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 成功 的本地化字符串。
+        /// </summary>
+        internal static string MessageSuccess {
+            get {
+                return ResourceManager.GetString("MessageSuccess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 错误 的本地化字符串。
+        /// </summary>
+        internal static string MessageError {
+            get {
+                return ResourceManager.GetString("MessageError", resourceCulture);
+            }
+        }
     }
 }

@@ -55,8 +55,14 @@ namespace HsUnpack
             button2.Text = Properties.Resources.ButtonUnpack;
             button3.Text = Properties.Resources.ButtonSelectFile;
             button4.Text = Properties.Resources.ButtonPack;
+            button5.Text = Properties.Resources.ButtonSelectFile;
+            button6.Text = Properties.Resources.ButtonDecryptCtx;
+            button7.Text = Properties.Resources.ButtonSelectFile;
+            button8.Text = Properties.Resources.ButtonEncryptCtx;
             label1.Text = Properties.Resources.LabelUnpackFile;
             label2.Text = Properties.Resources.LabelPackConfig;
+            label3.Text = Properties.Resources.LabelCtxDecrypt;
+            label4.Text = Properties.Resources.LabelCtxEncrypt;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -85,6 +91,76 @@ namespace HsUnpack
         private void button4_Click(object sender, EventArgs e)
         {
             HsDataProgress.PackDoProgress(textBox2.Text);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            string filepath = OpenFile();
+            if (filepath != "")
+            {
+                textBox3.Text = filepath;
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(textBox3.Text))
+                {
+                    MessageBox.Show(Properties.Resources.MessageSelectFile, Properties.Resources.MessageError, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (!File.Exists(textBox3.Text))
+                {
+                    MessageBox.Show(Properties.Resources.MessageFileNotFound, Properties.Resources.MessageError, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // 解密CTX文件
+                string outputPath = CtxCrypto.DecryptFile(textBox3.Text);
+                MessageBox.Show($"{Properties.Resources.MessageDecryptSuccess}\n{outputPath}", Properties.Resources.MessageSuccess, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{Properties.Resources.MessageDecryptFailed}\n{ex.Message}", Properties.Resources.MessageError, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string filepath = OpenFile();
+            if (filepath != "")
+            {
+                textBox4.Text = filepath;
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (string.IsNullOrEmpty(textBox4.Text))
+                {
+                    MessageBox.Show(Properties.Resources.MessageSelectFile, Properties.Resources.MessageError, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                if (!File.Exists(textBox4.Text))
+                {
+                    MessageBox.Show(Properties.Resources.MessageFileNotFound, Properties.Resources.MessageError, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // 加密文件为CTX格式
+                string outputPath = CtxCrypto.EncryptFile(textBox4.Text);
+                MessageBox.Show($"{Properties.Resources.MessageEncryptSuccess}\n{outputPath}", Properties.Resources.MessageSuccess, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"{Properties.Resources.MessageEncryptFailed}\n{ex.Message}", Properties.Resources.MessageError, MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
         /// <summary>
         /// 打开文件选择对话框，返回用户选择的文件路径（如果取消则返回空字符串）。

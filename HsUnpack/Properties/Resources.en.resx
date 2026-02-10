@@ -141,4 +141,40 @@
   <data name="FileFilterAll" xml:space="preserve">
     <value>All Files (*.*)|*.*</value>
   </data>
+  <data name="LabelCtxDecrypt" xml:space="preserve">
+    <value>CTX File Decryption </value>
+  </data>
+  <data name="LabelCtxEncrypt" xml:space="preserve">
+    <value>CTX File Encryption </value>
+  </data>
+  <data name="ButtonDecryptCtx" xml:space="preserve">
+    <value>Decrypt CTX</value>
+  </data>
+  <data name="ButtonEncryptCtx" xml:space="preserve">
+    <value>Encrypt CTX</value>
+  </data>
+  <data name="MessageSelectFile" xml:space="preserve">
+    <value>Please select a file first</value>
+  </data>
+  <data name="MessageFileNotFound" xml:space="preserve">
+    <value>File not found</value>
+  </data>
+  <data name="MessageDecryptSuccess" xml:space="preserve">
+    <value>Decryption successful! File saved to:</value>
+  </data>
+  <data name="MessageEncryptSuccess" xml:space="preserve">
+    <value>Encryption successful! File saved to:</value>
+  </data>
+  <data name="MessageDecryptFailed" xml:space="preserve">
+    <value>Decryption failed:</value>
+  </data>
+  <data name="MessageEncryptFailed" xml:space="preserve">
+    <value>Encryption failed:</value>
+  </data>
+  <data name="MessageSuccess" xml:space="preserve">
+    <value>Success</value>
+  </data>
+  <data name="MessageError" xml:space="preserve">
+    <value>Error</value>
+  </data>
 </root>
